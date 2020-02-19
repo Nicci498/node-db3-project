@@ -9,7 +9,7 @@ ON P.CategoryID = C.ID;
 SELECT Id, OrderDate, CompanyName FROM [order] as O
 JOIN Shipper as S
 ON O.ShipVia = S.Id
-WHERE OrderDate BETWEEN '2012-07-04' AND '2012-08-09'
+WHERE OrderDate BETWEEN '2012-07-04' AND '2012-08-09' ---WHERE orderDate < 2012-09-09
 ORDER BY OrderDate;
 
 -- Display the name and quantity of the products ordered in order with Id 10251. Sort by ProductName. Shows 3 records.
