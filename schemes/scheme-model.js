@@ -34,7 +34,7 @@ function add(scheme) {
 }//working
 
 function addStep(step, id){
-  return db(db('steps')).insert({...step, scheme_id:id});
+  return db('steps').insert({...step, scheme_id: id});
 }
 
 function update(changes, id) {
