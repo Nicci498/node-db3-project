@@ -27,3 +27,15 @@ JOIN Employee AS E
 ON O.EmployeeId = E.Id
 JOIN Customer AS C
 ON O.CustomerId = C.Id;
+
+
+--SQL stretch
+
+SELECT CategoryName, count() as count FROM [Categories]
+JOIN products ON products.categoryID = categories.categoryID
+GROUP BY categoryNameFrom Ramonta Lee to Everyone:  02:05 PM
+
+
+SELECT [Orders].OrderID, Count() AS ItemCount FROM [Orders]
+JOIN OrderDetails AS OD ON [Orders].OrderID = OD.OrderID
+GROUP BY [Orders].OrderID;
